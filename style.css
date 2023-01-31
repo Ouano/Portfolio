@@ -98,8 +98,8 @@ nav span {
 }
 
 .content h4 {
-    color: #5dabba;
-    font-size: 2px;
+    color: white;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 
@@ -160,7 +160,7 @@ nav span {
 }
 
 .card .profile {
-    background: url('/img/aboutme.jpg');
+    background-image: url(/img/aboutme.jpg);
     width: 70px;
     height: 70px;
     background-size: cover;
