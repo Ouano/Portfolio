@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    margin: 0;
+    color: #fff;
+}
+
+.projectSection {
+    height: 100vh;
+    width: 100%;
+    background-size: none;
+    background-position: inherit;
+    background-color: black;
+}
+
+.carrosel {
+    -webkit-perspective: 250px;
+    -moz-perspective: 250px;
+    width: 400px;
+    height: 200px;
+    top: 60px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+@-webkit-keyframes Carrosel {
+    from {
+        -webkit-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -webkit-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes Carrosel {
+    from {
+        -moz-transform: rotateY(360deg) translateZ(130px) rotateY(-360deg);
+        z-index: 10;
+        opacity: 1
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        -moz-transform: rotateY(0deg) translateZ(130px) rotateY(0deg);
+        z-index: 10;
+        opacity: 1
+    }
+}
+
+.card {
+    width: 90px;
+    height: 100px;
+    background-color: #442222;
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+    left: 125px;
+    font-size: 9px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, .3);
+    text-align: center;
+    -webkit-animation-name: Carrosel;
+    -moz-animation-name: Carrosel;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+.card:hover {
+    border: solid #f9004d 1px;
+    box-shadow: 0px 0px 10px #f9004d;
+}
+
+.card.card_1 {
+    background: linear-gradient(-240deg,#3e3e95,#2bb89a);
+    -webkit-animation-delay: -7s;
+    -moz-animation-delay: -7s;
+}
+
+.card.card_2  {
+
+    background: linear-gradient(-240deg, #8b8be3, #bd00ff);
+    -webkit-animation-delay: -6s;
+    -moz-animation-delay: -6s;
+}
+
+.card.card_3 {
+
+    background: linear-gradient(-240deg, #988908, #c63e26);
+    -webkit-animation-delay: -5s;
+    -moz-animation-delay: -5s;
+}
+
+.card.card_4  {
+    background: linear-gradient(-240deg, #c71193, #2c0e6c);
+    -webkit-animation-delay: -4s;
+    -moz-animation-delay: -4s;
+}
+
+.card.card_5  {
+    background: linear-gradient(-240deg, #109c43, #ee7208);
+    -webkit-animation-delay: -3s;
+    -moz-animation-delay: -3s;
+}
+
+.card.card_6  {
+    background: linear-gradient(-240deg, #9b0ab7, #0ab3b7);
+    -webkit-animation-delay: -2s;
+    -moz-animation-delay: -2s;
+}

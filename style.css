@@ -208,12 +208,12 @@ nav span {
     transition: all 0.5s ease-in-out;
 }
 
-.card:hover  .description, .card:focus  .description, .card:active   .description {
+.card:hover .description,.card:active  .description {
     border: 1px solid #FF5D01;
     box-shadow: 0px 2px 21px rgba(0,0,0,0.35);
 }
 
-.card:hover .socials , .card:focus .socials , .card:active .socials {
+.card:hover .socials,.card:active .socials {
     transform: translateX(100px);
 }
 
@@ -244,12 +244,20 @@ nav span {
         box-shadow: 0px 2px 21px rgba(0,0,0,0.25);
         border-radius: 26px;
     }
+    .card:hover  .description,.card:active .description  {
+        border: 1px solid #FF5D01;
+        box-shadow: 0px 2px 21px rgba(0,0,0,0.35);
+    }
+    .card:hover .socials, .card:active .socials{
+        transform: translateX(160px);
+    }
+
     .socials {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
         width: 50%;
         height: 100%;
         top: 0;
@@ -263,15 +271,5 @@ nav span {
         display: flex;
         align-items:flex-start;
         justify-content: flex-start;
-    }
-
-    @media (hover:hover) {
-        .card:hover  .description, .card:focus  .description, .card:active   .description  {
-            border: 1px solid #FF5D01;
-            box-shadow: 0px 2px 21px rgba(0,0,0,0.35);
-        }
-        .card:hover .socials , .card:focus .socials , .card:active .socials{
-            transform: translateX(160px);
-        }
     }
 }
