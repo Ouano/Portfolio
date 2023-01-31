@@ -138,3 +138,7 @@
     -webkit-animation-delay: -2s;
     -moz-animation-delay: -2s;
 }
+
+img {
+    height: 100vh;
+}
