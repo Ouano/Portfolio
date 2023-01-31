@@ -86,13 +86,13 @@ nav span {
 }
 
 .content h1 {
-    color: white;
+    color: #f9004d;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 
 .content h3 {
-    color: white;
+    color: #f9004d;
     font-size: 25px;
     margin-bottom: 50px;
 }
@@ -104,7 +104,7 @@ nav span {
 }
 
 .content span {
-    color: #f9004d;
+    color: white;
 }
 
 /* End of Container */
@@ -114,8 +114,8 @@ nav span {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50%;
     height: 100vh;
+    background-color: #474747;
 }
 .card {
     position: relative;
