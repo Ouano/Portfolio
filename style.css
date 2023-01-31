@@ -114,6 +114,8 @@ nav span {
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 50%;
+    height: 100vh;
 }
 .card {
     position: relative;
@@ -153,7 +155,7 @@ nav span {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-375height: 30px;
+    line-height: 30px;
     color:#DADADA;
 }
 
