@@ -15,7 +15,7 @@
 .firstSection {
     height: 100vh;
     width: 100%;
-    background-image: url(/img/profile.jpg);
+    background-image: url(./img/profile.jpg);
     background-size: none;
     background-position: inherit;
 }
@@ -160,7 +160,7 @@ nav span {
 }
 
 .card .profile {
-    background-image: url(/img/aboutme.jpg);
+    background-image: url(./img/aboutme.jpg);
     width: 70px;
     height: 70px;
     background-size: cover;
@@ -225,7 +225,7 @@ nav span {
     .firstSection {
         height: 100vh;
         width: 100%;
-        background-image: url(/img/profile.jpg);
+        background-image: url(./img/profile.jpg);
         background-size:cover;
         background-position: inherit;
     }
