@@ -222,7 +222,7 @@ nav span {
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 410px) {
     .firstSection {
         height: 100vh;
         width: 100%;
@@ -244,11 +244,11 @@ nav span {
         box-shadow: 0px 2px 21px rgba(0,0,0,0.25);
         border-radius: 26px;
     }
-    .card:hover .description {
+    .card:hover  .description, .card:focus  .description, .card:active   .description {
         border: 1px solid #FF5D01;
         box-shadow: 0px 2px 21px rgba(0,0,0,0.35);
     }
-    .card:hover .socials {
+    .card:hover .socials , .card:focus .socials , .card:active .socials  {
         transform: translateX(160px);
     }
     
