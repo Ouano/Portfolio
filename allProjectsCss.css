@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    overflow: hidden;
+}
+
+
+/* Start of Container */
+.firstSection {
+    height: 50vh;
+}
+
+.nameLogo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: 0.5s;
+}
+
+nav ul li a.active {
+    color: #f9004d;
+    transform: 0.5s;
+}
+
+nav span {
+    color: #f9004d;
+}
+
+
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    border-color: white;
+    flex-wrap: wrap;
+}
+
+.cards-1, .cards-2, .cards-3, .cards-4, .cards-5 {
+    height: 120px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex: 1;
+    transition: 0.5s all ease;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cards-1:hover, .cards-2:hover, .cards-3:hover, .cards-4:hover, .cards-5:hover {
+    flex: 2;
+    transform: scale(1.5);
+}
+
+.cards-1:hover {
+    background-color: white;
+}
+
+
+.cards-2:hover {
+    background-color: #2196f3;
+}
+
+.cards-3:hover{
+    background: rgb(255,120,22);
+    background: linear-gradient(90deg, rgba(255,120,22,1) 35%, rgba(255,75,0,1) 100%);;
+}
+
+.cards-4:hover{
+    background-color: #ffdf00;
+}
+
+.cards-5:hover{
+    background-color: black;
+}
+
+.card-img1 {
+    background-image: url(./img/java.png);
+    width: 100px;
+    height: 100px;
+    background-size:contain;
+    background-color: inherit;
+}
+
+.card-img2 {
+    background-image: url(./img/css-3.png);
+    width: 100px;
+    height: 100px;
+    background-size:contain;
+    background-color: inherit;
+}
+
+.card-img3 {
+    background-image: url(./img/html.png);
+    width: 100px;
+    height: 100px;
+    background-size:contain;
+    background-color: inherit;
+}
+
+.card-img4 {
+    background-image: url(./img/js.png);
+    width: 100px;
+    height: 100px;
+    background-size:contain;
+    background-color: inherit;
+}
+
+.card-img5 {
+    background-image: url(./img/kotlin.512x512.png);
+    width: 100px;
+    height: 100px;
+    background-size:contain;
+    background-color: inherit;
+}
+
+
+.secondContainer {
+    height: 100vh;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.secondContainer img {
+    width: 50%;
+    height: 50%;
+}
+
