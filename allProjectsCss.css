@@ -26,6 +26,47 @@ body {
     cursor: pointer;
 }
 
+
+#navButton-toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    color: #f9004d;
+    /* position: relative; */
+  /* z-index: 1; */
+  /* padding: 10px; */
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    /* take the width out the width if you want it to have the drop down animation to the right side */
+    /* width: 50%;  */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    z-index: 2;
+}
+  
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transform-origin: top;
+    color: #f9004d;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -182,3 +223,16 @@ nav span {
     height: 50%;
 }
 
+
+@media (max-width: 600px) {
+
+    #navButton-toggle {
+        display: block;
+    }
+    nav {
+        flex-direction: row;
+    }
+    nav ul {
+        display: none;
+    }
+}
